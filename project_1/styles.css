@@ -1,15 +1,29 @@
+* {margin: 0;}
+
 h1 {
     color: red;
     text-align: center;
+    font-size: 40 px;
+    margin-bottom: 50px;
 }
-
+article {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 40 px;
+    padding: 20 px 0 px;
+}
 h2 {
     font-size: 28px;
     color: blue;
+    text-align: center;
 }
 
 img {
     display: block;
-    margin: auto;
+    margin: 30px auto 20 px;
     width: 400px;
+}
+p{
+    font-size: 20px;
+    text-align: center;
 }

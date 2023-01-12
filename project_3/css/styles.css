@@ -28,7 +28,6 @@ p {
 }
 img {
   display: block;
-  max-width: 100%;
   height: auto;
 }
 header {
@@ -37,6 +36,7 @@ header {
 }
 
 h2 {
+  margin-bottom: 50px;
   font-family: 'Inter';
   font-size: 35px;
   line-height: 42px;
@@ -44,6 +44,7 @@ h2 {
 ul {
   display: flex;
 }
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -71,16 +72,68 @@ line-height: 1.2;
     padding: 0;
   display: flex;
 }
-.about_description {
+.about_img {
+  width: 50%;
+}
+.about_item {
+  margin-bottom: 23px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center
+    align-items: center;
 }
-.about > img {
-    width: 50%;
-    max-width: 756px;
+
+.about_description {
+  text-align: justify;
+    margin-left: 9%;
+    margin-right: 9%;
 }
-.projects {
+.container_projects {
+  padding-top: 124px;
+  padding-bottom: 124px;
   background-color: #dcffeb;
+}
+.projects_list {
+  justify-content: space-between;
+}
+
+.projects_img:not(:last-child) {
+margin-right: 2.6%;
+}
+.container_footer {
+  padding-top: 84px;
+  padding-bottom: 76px;
+}
+.contacts_list {
+  justify-content: space-between
+}
+.contacts_item:not(:last-child) {
+  margin-right: calc(37/1374*100%);
+}
+.contacts_img {
+  margin-bottom: 36px;
+}
+.contacts_description {
+  margin-bottom: 36px;
+  font-family: 'Oswald';
+font-weight: 500;
+font-size: 24px;
+line-height: 36px;
+text-align: center;
+color: #999999;
+}
+.contacts_item {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+}
+.contacts_description {
+  color: #999999;
+}
+.contacts_block {
+  display: flex;
+  flex-direction: column;
 }

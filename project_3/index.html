@@ -35,42 +35,60 @@
     <body>
       <div class="container container_about">
         <section class="about">
-          <img src="./images/image 5.jpg" alt="Офис компании Icon" />
-          <div class="about_description">
-            <h2>О нас</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid corporis ab vero
-              saepe ipsa dolores adipisci velit laboriosam sunt fuga, reiciendis dolorum non tempora
-              possimus officia. Quos facilis velit quaerat.
+          <img class="about_img" src="./images/image 5.jpg" alt="Офис компании Icon" />
+          <div class="about_item">
+            <h2 class="about_title">О нас</h2>
+            <p class="about_description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </div>
         </section>
       </div>
-      <div class="container">
+      <div class="container container_projects">
         <section class="projects" id="projects">
-          <h2>Наши проекты</h2>
-          <ul>
-            <li><img src="./images/project__arena.jpg" alt="Арена" /></li>
-            <li><img src="./images/project__arena.jpg" alt="Арена" /></li>
-            <li><img src="./images/project__arena.jpg" alt="Арена" /></li>
+          <h2 class="projects_description">Наши проекты</h2>
+          <ul class="projects_list">
+            <li class="projects_img"><img src="./images/project__arena.jpg" alt="Арена" /></li>
+            <li class="projects_img"><img src="./images/project__arena.jpg" alt="Арена" /></li>
+            <li class="projects_img"><img src="./images/project__arena.jpg" alt="Арена" /></li>
           </ul>
         </section>
       </div>
     </body>
     <footer id="contacts">
-      <div class="container">
+      <div class="container container_footer">
         <h2>Контакты</h2>
-        <ul>
-          <li>
-            <img src="" alt="" />
-            <div></div>
-            <address></address>
-          </li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
+        <address>
+          <ul class="contacts_list">
+            <li class="contacts_item">
+              <img class="contacts_img" src="./images/4.svg" alt="address" />
+              <p class="contacts_description">АДРЕС:</p>
+              <a href="https://goo.gl/maps/NnP1hzuQgfwQMmNs7">НЕВСКИЙ ПРОСПЕКТ 140,<br>
+                  ОФИС 140-142</a>
+            </li>
+            <li class="contacts_item">
+              <img class="contacts_img" src="./images/2.svg" alt="phone" />
+              <p class="contacts_description">ТЕЛЕФОН:</p>
+              <div class="contacts_block">
+                <a class="contacts_date" href=”tel:+88121112233”>8 (812) 111-22-33</a>
+              <a class="contacts_date" href=”tel:+88121112233”>8 (812) 111-22-33</a>
+              </div>
+              
+            </li>
+            <li class="contacts_item">
+              <img class="contacts_img" src="./images/1.svg" alt="clock" />
+              <p class="contacts_description">ВРЕМЯ РАБОТЫ:</p>
+              <div class="contacts_date">ПН-СБ<br>10:00 - 20:00</div>
+            </li>
+            <li class="contacts_item">
+              <img class="contacts_img" src="./images/3.svg" alt="envelope" />
+              <p class="contacts_description">E-MAIL:</p>
+              <a class="contacts_date"href="mailto:INFO@VIP.RU">INFO@VIP.RU</a>
+            </li>
+          </ul>
+        </address>
       </div>
+      
     </footer>
   </body>
 </html>

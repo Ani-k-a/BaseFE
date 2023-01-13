@@ -26,10 +26,7 @@ h6,
 p {
   margin: 0;
 }
-img {
-  display: block;
-  height: auto;
-}
+
 header {
   background-color: #1abc9c;
   height: 70px;
@@ -50,8 +47,8 @@ ul {
   margin-right: auto;
   padding-left: 5%;
   padding-right: 5%;
-  height: 100%;
 }
+
 header > .container {
   align-items: center;
   justify-content: space-between;
@@ -96,8 +93,10 @@ line-height: 1.2;
 .projects_list {
   justify-content: space-between;
 }
-
-.projects_img:not(:last-child) {
+.projects_item {
+  width: 31.6%;
+}
+.projects_item:not(:last-child) {
 margin-right: 2.6%;
 }
 .container_footer {

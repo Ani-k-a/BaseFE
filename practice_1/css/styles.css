@@ -1,5 +1,89 @@
-header { background-color: aquamarine;}
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
+
+  img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+header { background-color: rgb(25, 108, 80);
+padding-top: 50px;
+color: white;}
+main {display: flex;}
+
+
 .header_title, .header_description {
     text-align: center;
-    font
+    
+}
+.header_title {
+    margin-bottom: 15px;
+}
+.header_description {
+    margin-bottom: 50px;
+}
+.accent {
+    font-weight: 700;
+}
+.navigation {
+    padding: 25px;
+    background-color: black;
+}
+.navigation_list {display: flex;}
+.navigation_item:hover {
+    color: black;
+    background-color: blueviolet;
+
+}
+.navigation_item:not(:last-child) {
+    margin-right: 10px;
+}
+section {
+    padding: 25px;
+}
+.about {
+    background-color: gray;
+    width: 30%;
+}
+.articles {
+    background-color: rgb(215, 214, 214);
+}
+h2, h3, p {
+    margin-bottom: 15px;
+}
+article > h2{
+    text-transform: uppercase;
+}
+.articles_item:not(:last-child) {
+    margin-bottom: 40px;
+}
+footer {
+    padding: 40px;
+    background-color: rgb(102, 101, 101);
+}
+.footer_title {
+    text-align: center;  
+    margin-bottom: 0;  
 }

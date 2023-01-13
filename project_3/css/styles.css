@@ -90,6 +90,7 @@ header > .container {
   width: 50%;
 }
 .about_item {
+  width: 50%;
   padding: 9%;
   display: flex;
   flex-direction: column;

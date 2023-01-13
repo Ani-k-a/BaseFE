@@ -46,10 +46,21 @@ p {
     margin-bottom: 15px;
 }
 button {
+  border: none;
    padding: 15px 35px; 
    width: 100%;
    background-color: gray;
    color: white;
+}
+button:hover {
+background-color: white;
+color: black;
+}
+.card {
+  border: 2px;
+  border-style: solid;
+  border-color: grey;
+  box-shadow: 5px 5px 5px gray;
 }
 .item {
     padding: 35px;

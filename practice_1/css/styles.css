@@ -1,3 +1,6 @@
+html {
+    font-family: Arial;
+}
 a {
     text-decoration: none;
     color: inherit;
@@ -25,9 +28,11 @@ a {
 
   img {
     width: 100%;
-    margin-bottom: 30px;
+    
 }
-
+p {
+    font-size: 18px;
+}
 header { background-color: rgb(25, 108, 80);
 padding-top: 50px;
 color: white;}
@@ -86,4 +91,16 @@ footer {
 .footer_title {
     text-align: center;  
     margin-bottom: 0;  
+}
+.about_block_img, .articles_block_img {
+    margin-bottom: 30px;
+    background-image: url("../images/bildimbild19.jpg");
+    background-color: #cccccc; 
+    height: 100px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+.articles_block_img, .about_block_img.main  {
+    height: 350px; 
 }

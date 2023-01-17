@@ -1,0 +1,163 @@
+body {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #727272;
+  background-color: #e5e5e5;
+}
+
+summary {
+  display: list-item;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+    padding: 25px 40px;
+  border: none;
+  cursor: pointer;
+  background-color: #34547a;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 100px 0;
+}
+.about,
+.skills,
+.partners {
+  background-color: #fcfdfd;
+}
+.title {
+  margin-bottom: 50px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  color: #000000;
+}
+.container_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 0;
+}
+.header_item:not(:last-child) {
+  margin-right: 40px;
+}
+.header_logo {
+  color: #34547a;
+  font-family: 'Revalia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 60px;
+}
+.header_list {
+  display: flex;
+}
+.container_hero {
+  display: flex;
+}
+.hero_description {
+  margin-bottom: 60px;
+}
+.container_about {
+  text-align: center;
+  width: 50%;
+}
+.projects {
+  background-color: #34547a;
+  color: #ffffff;
+}
+.projects_list {
+  display: flex;
+  justify-content: space-between;
+}
+.projects_item {
+  display: flex;
+}
+.projects_item-img {
+  margin-right: 20px;
+}
+.projects_number {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+}
+.container_skills {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skills_info {
+  width: 40%;
+}
+.skills_item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.skills_description {
+  margin-bottom: 20px;
+}
+.skill_scale_outer {
+  background-color: #c4c4c4;
+  height: 4px;
+  width: 100%;
+}
+.skill-scale-inner {
+  background-color: #34547a;
+  height: 100%;
+  width: 78%;
+}
+.skills_img {
+    width: 50%;
+}
+.work_container {
+    text-align: center;
+}
+.work_info {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.infographic_container {
+    width: 100%;
+background-image: url(./images/projects.jpg);
+}

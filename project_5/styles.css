@@ -54,6 +54,9 @@ button {
   text-align: center;
   letter-spacing: 0.1em;
 }
+button:hover, button:focus {
+  background-color: #6683a5;
+}
 .container {
   width: 80%;
   margin-left: auto;
@@ -80,6 +83,9 @@ button {
 }
 .header_item:not(:last-child) {
   margin-right: 40px;
+}
+.header_item:hover, .header_item:focus, .header_logo:hover ,.header_logo:focus {
+  color: #6683a5;
 }
 .header_logo {
   color: #34547a;
@@ -163,15 +169,14 @@ button {
 .contacts_container {
   text-align: center;
 }
-.work_info,
-.contacts_info,
-.about_info {
+.info {
   width: 50%;
   margin: auto;
   margin-bottom: 60px;
 }
-.wideo {
-  display: block;
+.video {
+  width: 100%;
+  aspect-ratio: 1/0.54;
 }
 .infographic_container {
   padding: 0;
@@ -202,6 +207,10 @@ button {
   height: 100%;
   transform: translateY(101%);
   transition: transform 250ms ease;
+  display: flex;
+}
+.overlay_img {
+  margin: auto;
 }
 .partners {
     position: relative;
@@ -223,14 +232,13 @@ button {
   flex-direction: column;
   margin: auto;
   width: 50%;
-  font-size: 14px;
-  line-height: 23px;
-  color: #5f5d5d;
+
 }
 .subscribe_dates {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+ 
 }
 .subscribe_input {
   box-sizing: border-box;
@@ -238,11 +246,24 @@ button {
   padding-left: 20px;
   height: 50px;
   width: 47%;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  color: #5f5d5d;
 }
 .subscribe_message {
   border: none;
   margin-bottom: 50px;
   padding: 17px 20px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  color: #5f5d5d;
+  
 }
 .subscribe_button {
   padding: 20px 45px;

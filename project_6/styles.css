@@ -1,10 +1,9 @@
-.skill_scale_outer {
-    background-color: #C4C4C4;
-    height: 4px;
+.item {
+    width: 200px;
+    aspect-ratio: 1/0.5;
+    background-color: aqua;
+}
+
+.video {
     width: 100%;
-}
-.skill-scale-inner {
-background-color: #34547A;
-height: 4px;
-width: 78%;
-}
+  }

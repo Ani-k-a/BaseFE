@@ -121,7 +121,7 @@ header > .container {
     background-size: cover;
       background-color: #cccccc;
     width: 31.6%;
-    height: 376px;
+    aspect-ratio: 1/0.86
 
 }
 .projects_item:not(:last-child) {

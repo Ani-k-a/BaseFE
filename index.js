@@ -1,96 +1,98 @@
-// home work 
-
-/* 
-    ## Example 8 - Форматування часу
-    Напиши функцію `formatTime(minutes)` яка переведе значення `minutes`
-    (кількість хвилин) у рядок у форматі годин та хвилин `HH:MM`.
-
+/*
+## Example - Комплексні завдання
+Напиши скрипт управління особистим кабінетом інтернет банку. Є об'єкт `account`
+в якому необхідно реалізувати методи для роботи з балансом та історією
+транзакцій. 
 */
 
+/*
+* Типів транзакцій всього два.
+* Можна покласти чи зняти гроші з рахунку.
+*/
+const TRANSACTION = {
+    DEPOSIT: 'deposit',
+    WITHDRAW: 'withdraw',
+};
 
-
-
-function formatTime(minutes) {
-    const totalMinutes = minutes;
-    const hours = Math.floor(totalMinutes / 60);
-    const minut = totalMinutes % 60;
-    
-    // console.log(hours);
-    // console.log(minut);
-    
-    const doubleDigitHours = String(hours).padStart(2, 0);
-    const doubleDigitMinutes = String(minut).padStart(2, 0);
-    return `${doubleDigitHours}:${doubleDigitMinutes}`; 
-}
-
-console.log(formatTime(70)); // "01:10"
-console.log(formatTime(450)); // "07:30"
-console.log(formatTime(1441)); // "24:01"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-    ## Example 9 - Колекція курсів (includes, indexOf, push і т. д.)
-    Напишіть функції для роботи з колекцією навчальних курсів `courses`:
-    - `addCourse(name)` - додає курс до кінця колекції
-    - `removeCourse(name)` - видаляє курс із колекції
-    - `updateCourse(oldName, newName)` - змінює ім'я на нове
+/*
+* Кожна транзакція це об'єкт із властивостями: id, type та amount
 */
 
-const courses = ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL'];
+const account = {
+    // Поточний баланс рахунку
+    balance: 0,
 
-function addCourse(course) {
+    // Історія транзакцій
+    transactions: [],
 
-    if (courses.includes(course)) {
-        console.log("Ви вже маєте такий курс");
-    } else
-    return courses.push(course);
-}
+    /*
+     * Метод створює та повертає об'єкт транзакції.
+     * Приймає суму та тип транзакції.
+     */
+    createTransaction(amount, type) { 
+        return {
+            amount,
+            type,
+            id : this.transactions.length + 1,
+        }
+    },
 
+    /*
+     * Метод, що відповідає за додавання суми до балансу.
+     * Приймає суму транзакції.
+     * Викликає createTransaction для створення об'єкта транзакції
+     * після чого додає його до історії транзакцій
+     */
+    deposit(amount) {
+        this.balance += amount;
+        const transaction = this.createTransaction(amount, TRANSACTION.DEPOSIT);
+        this.transactions.push(transaction);
+        console.log(this.transactions);
+    },
 
-function removeCourse(cour) {
+    /*
+     * Метод, що відповідає за зняття суми з балансу.
+     * Приймає суму транзакції.
+     * Викликає createTransaction для створення об'єкта транзакції
+     * після чого додає його до історії транзакцій.
+     *
+     * Якщо amount більше ніж поточний баланс, виводь повідомлення
+     * про те, що зняття такої суми не можливе, недостатньо коштів.
+     */
+    withdraw(amount) {
 
-        for ( i=0; i < courses.length; i+=1) {
-            if (courses[i] === cour) {
-                courses.splice(i, 1);}
-                
-        }   
-        return console.log("Курс із таким ім'ям не знайдено");
-}
+        if (amount <= this.balance) {
+            this.balance -= amount;
+            const transaction = this.createTransaction(amount, TRANSACTION.WITHDRAW);
+            this.transactions.push(transaction);
+            console.log(this.transactions);
+        }
+        console.error("Недостатньо коштів на рахунку")
+    },
 
+    /*
+     * Метод повертає поточний баланс
+     */
+    getBalance() {
+        return this.balance;
+    },
+    getTranzactions() {
+    return this.transactions;
+},
+    /*
+     * Метод шукає та повертає об'єкт транзакції по id
+     */
+    getTransactionDetails(id) { },
 
-function updateCourse(oldCourse, newCourse) {
-    for (course of courses) {
-        return courses.splice(courses.indexOf(oldCourse), 1, newCourse);
-    }
-}
-
-addCourse('Express');
-console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL', 'Express']
-
-addCourse('CSS'); // 'Ви вже маєте такий курс'
-
-removeCourse('React');
-console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'Express']
-
-removeCourse('Vue'); // 'Курс із таким ім'ям не знайдено'
-
-updateCourse('Express', 'NestJS');
-console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'NestJS']
-
-
+    /*
+     * Метод повертає кількість коштів
+     * певного типу транзакції з усієї історії транзакцій
+     */
+    getTransactionTotal(type) { },
+};
+account.deposit(500);
+account.getBalance();
+account.getTranzactions();
+account.withdraw(100);
+account.withdraw(150);
+// account.withdraw(30);

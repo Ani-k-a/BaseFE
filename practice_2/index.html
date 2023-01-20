@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <section>
+      <div class="title">
+        <h1>Tour Boooking Form</h1>
+      </div>
+      <form action="">
+        <label>
+          Name
+          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="Last Name" />
+        </label>
+        <label>
+          Email
+          <input type="email" placeholder="name@mail.ru" />
+        </label>
+        <label>
+          Phone
+          <input type="tel" placeholder="### ### ####" />
+        </label>
+        <label>
+          When are you planning to vizit?
+          <input class="accent" type="date" min="2023-01-20" />
+        </label>
+        <label>
+          How many people are in group?
+          <input type="number" />
+        </label>
+        <label>
+          Which tour are you most interested in?
+          <select class="accent">
+            <option cheched>*Plase select*</option>
+            <option value="country1">Germany</option>
+            <option value="country2">Italy</option>
+          </select>
+        </label>
+        <fieldset>
+          <legend>What is best way to contact you?</legend>
+          <label class="accent"><input type="checkbox" />Phone</label>
+          <label class="accent"><input type="checkbox" />Email</label>
+          <label class="accent"><input type="checkbox" />Either</label>
+        </fieldset>
+        <fieldset>
+          <legend>
+            If phone, when is the best time of day for a call-back?
+          </legend>
+          <label class="accent" for="first_time"
+            ><input type="radio" name="time" />8 - 11 AM</label
+          >
+          <label class="accent" for="second_time"
+            ><input type="radio" name="time" />12 - 4 PM</label
+          >
+          <label class="accent" for="third_time"
+            ><input type="radio" name="time" />6 - 10 PM</label
+          >
+        </fieldset>
+        <label>
+          Anything else we should know?
+          <textarea name="text" rows="3"></textarea>
+        </label>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </body>
+</html>

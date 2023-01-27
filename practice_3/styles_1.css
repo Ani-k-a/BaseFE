@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+
+.navigation {
+    position: fixed;
+    top: 0;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+.navigation_list { 
+    display: flex;
+    flex-direction: row;
+}
+.navigation_item{
+    border-right: 1px solid white;
+    padding: 20px;
+}
+.container {
+    margin: 10px;
+    width: 350px;
+}
+h1 {
+    margin-top:80px;
+    margin-bottom: 20px;
+}
+h2 {
+    margin-bottom: 20px;
+}
+p {
+    margin-top: 15px;
+}

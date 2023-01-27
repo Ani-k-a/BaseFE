@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 20px;
+}
+li {
+  list-style: none;
+}
+ul{
+    padding: 40px;
+}
+.main-list_item {
+  position: sticky;
+  top: 0;
+  background-color: black;
+  font-size: 35px;
+  font-weight: 700;
+  color: white;
+  padding: 20px;
+}
+
+.list {
+  font-size: 18px;
+  font-weight: 400;
+}

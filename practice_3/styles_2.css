@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+body{
+    padding: 30px;
+}
+h1, p {
+    margin-bottom: 20px;
+}
+button{
+    position: relative;
+    padding: 10px;
+    border: none;
+    background-color: green;
+    color: white;
+}
+button:hover .list, button:focus .list {
+    
+
+}
+.list{ 
+    position: fixed;
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    width: 120px;
+}
+.list_item{
+    padding: 10px;
+
+}
+.list_item:hover, .list_item:focus {
+    background-color: lightgrey;
+}

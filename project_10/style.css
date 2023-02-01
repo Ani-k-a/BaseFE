@@ -1,6 +1,44 @@
-.green-btn {
+/* .green-btn {
     color: black;
 }
 .red-btn {
     color: black;
-};
+}; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    width: 400px;
+
+}
+
+.btn {
+    padding: 20px 0;
+    border: none;
+    outline: none;
+    background-color: rgb(22, 103, 22);
+    border-radius: 8px;
+    font-size: 22px;
+    width: 100%;
+}
+.btn:hover {
+    background-color: rgb(22, 142, 68);
+}
+
+.btn:active {
+    transform: scale(1.05);
+}
+.btn:not(:last-child) {
+    margin-bottom: 15px;
+}

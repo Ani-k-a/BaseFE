@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+}
+li { 
+    list-style: none;
+}
+
+main {
+    width: 80%;
+    margin: 60px auto;
+}
+
+button {
+    margin-top: 120px;
+    padding: 10px 0;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(39, 171, 87);
+    font-size: inherit;
+    color: white;
+}
+.section {
+    display: flex;
+    padding: 30px 40px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    background-color: rgb(32, 52, 102);
+    color: white;
+}
+
+input {
+    border: none;
+    padding: 10px 40px;
+    margin-bottom: 40px;
+    background-color: #D9D9D9;
+    font-size: inherit;
+}
+
+input::placeholder {
+    font-size: 25px;
+    color:rgba(0, 0, 0, 1);
+}
+.section-add{
+    flex-direction: column;
+    padding: 70px 150px;
+}
+.section-sort{
+    flex-direction: column;
+}
+.sort-select {
+    background-color: #D9D9D9;
+    margin-left: 20px;
+    padding: 10px 20px;
+    font-size: 25px;
+    color:rgba(0, 0, 0, 1);
+}
+
+.section-product {
+    
+    justify-content: space-between;
+}
+.button-close {
+    position:absolute;
+    display: none;
+}
+.section-product:hover, .section-product:focus{
+    position: relative;
+    }
+.section-product:hover > .button-close, .section-product:focus > .button-close {
+display: block;
+}
+.close-btn{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FC7171;
+    border: 4px solid black;
+    right: 8px;
+    top: 8px;
+}
+.close-icon{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    fill: black;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -23,13 +23,16 @@ button{
 
 .list{ 
     position: absolute;
-    left: -200px;
+    z-index: 1;
+    /* left: -200px; */
+    display: none;
     -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
 box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
     width: 120px;
 }
 .button-container:hover > .list,  .button-container:focus > .list {
-    left: 0px;
+    /* left: 0px; */
+    display: block;
 }
 
 .list_item{

@@ -12,28 +12,27 @@
   </head>
   <body>
     <main>
-      <form class="section section-add" action="submit">
-        <input class="add-product_name" type="text" name="" id="" placeholder="Название" />
-        <input class="add-product_price" type="number" name="" id="" placeholder="Цена" />
+      <form class="section section-add">
+        <input class="add-product_name" type="text" name="" id="" placeholder="Название" required/>
+        <input class="add-product_price" type="number" name="" id="" placeholder="Цена" required/>
         <button class="add-btn" type="submit">Добавить</button>
       </form>
       <form class="section section-sort">
-        <input type="text" name="" id="" placeholder="Название" />
+        <input class="sort-item" type="text" name="" id="" placeholder="Название" />
         <div>
           <lable>
             Отсортировать по:
             <select class="sort-select" name="" id="">
-              <option>Название</option>
-              <option>Цена</option>
+              <option aria-checked="">---</option>
+              <option value="Name">Название</option>
+              <option value="Price">Цена</option>
             </select>
           </lable>
         </div>
       </form>
-      <div> 
-        <button class="close-btn"><svg class="close-icon"><use href="./symbol-defs.svg#icon-modal_close"></use></svg></button>
+      <div class="product-box"> 
         <ul class="product-list"></ul>
-      </div>
-      
+      </div>   
     </main>
     <script src="./script.js" type="module"></script>
   </body>
